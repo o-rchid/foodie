@@ -32,6 +32,10 @@ dependencies {
 	providedRuntime 'org.springframework.boot:spring-boot-starter-tomcat'
 	testImplementation 'org.springframework.boot:spring-boot-starter-test'
 
+	/* 스프링부트에서 jsp를 권장하지 않으므로 설정한  정보*/
+	implementation 'javax.servlet:jstl'
+	implementation "org.apache.tomcat.embed:tomcat-embed-jasper" /*jsp를 파싱한다*/
+
 }
 
 tasks.named('test') {
